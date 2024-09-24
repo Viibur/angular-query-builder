@@ -26,13 +26,12 @@ export interface FieldMap {
 export interface Field {
   name: string;
   value?: string;
-  type: string;
+  type?: string;
   nullable?: boolean;
   options?: Option[];
   operators?: string[];
   defaultValue?: any;
   defaultOperator?: any;
-  entity?: string;
   validator?: (rule: Rule, parent: RuleSet) => any | null;
 }
 

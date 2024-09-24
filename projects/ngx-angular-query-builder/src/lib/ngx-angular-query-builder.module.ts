@@ -13,11 +13,13 @@ import { QueryButtonGroupDirective } from './query-builder/query-button-group.di
 import { QuerySwitchGroupDirective } from './query-builder/query-switch-group.directive';
 import { QueryRemoveButtonDirective } from './query-builder/query-remove-button.directive';
 import { QueryEmptyWarningDirective } from './query-builder/query-empty-warning.directive';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    NgSelectModule,
   ],
   declarations: [
     QueryBuilderComponent,
